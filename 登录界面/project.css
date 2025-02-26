@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    border-radius: 15px;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+
+.background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login{
+    width: 300px;
+    height: 400px;
+    /* float: left; */
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    background: rgba(255, 255, 255, 0.5);/* 黑色 50% 透明遮罩 */
+}
+.login-box{
+    font-size: 28px;
+    font-weight: bolder;
+    transform: skewX(-4deg);
+    text-align: center;
+}
+
+.tabHead{
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+.tabHead::after{
+    content: "";
+    display: inline-block;
+    width: 80%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+.login-form{
+    position: relative;
+}
+
+.PwLogin,.WcLogin{
+    width: 50%;
+    text-align: center;
+}
+
+.LoginFont{
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.login-icon{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 5px;
+    object-fit: contain;  /* 保持比例完整显示 */
+}
+
+.prex-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute
+}
+
+.username,.password{
+    width: 250px;
+    height: auto;
+    display: flex;
+    margin-left: 25px;
+    gap: 5px;
+    align-items: center;
+}
+
+.in-item{
+    flex: 1;
+    margin-left: 40px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+  /* 可选：placeholder 颜色 */
+  .in-item::placeholder {
+    color: #999;
+  }
+
+.item{
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+.input-submit{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.submitLogin{
+    width: 35%;
+    height: 40px;
+    border-radius: 25px;
+    background-color:green;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .badge {
+            display: inline-block; /* 行内块元素-支持宽高，但不换行 */
+            padding: 8px 20px; /* <!-- 边距 --> */
+            border: 1px solid #dcdfe6; /* <!-- 边框 --> */
+            border-radius: 5px; /* 圆角 */
+            line-height: 1px; /* 行高-取消文字产生的间距 */
+            color: #858689; /* 文字的颜色 */
+            margin-right: 50px; /* 右外边距 */
+            position: relative; /* 相对定位 */
+        }
+
+        .badge .num {
+            /* background-color: skyblue;背景色 */
+            padding: 3px 7px;/* 内边距 */
+            /* 设置行高为1，取消文字产生的上下边距，保证上下边距为我们设置的3px */
+            line-height: 1;
+            border-radius: 20px;/* 圆角 */
+            font-size: 12px; /* 字体大小 */
+            color: #fff;/* 文字颜色 */
+            font-weight: bold;/* 加粗 */
+            position: absolute;/* 绝对定位 */
+            right: 0px;/* 相对于父元素右边距离 */
+            top: 0px;/* 相对于父元素上边距离 */
+            transform: translate(50%, -50%); /* 水平向右移动自身长度的一半，水平向上移动自身长度一半 */
+        }
+        .bg-red{
+            background-color: red;/* 背景为红色 */
+        }
+        .bg-blue{
+            background-color: blue;/* 背景为蓝色 */
+        }
+        .bg-orange{
+            background-color: orange;/* 背景为橙色 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="badge">
+        评论
+        <span class="num bg-orange">12</span>
+    </div>
+    <div class="badge">
+        好评
+        <span class="num bg-blue">9</span>
+    </div>
+    <div class="badge">
+        购物车
+        <span class="num bg-red">99+</span>
+    </div>
+
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <div class="menu">首页</div>
+        <div class="menu">产品</div>
+        <div class="menu">关于</div>
+        <div class="space"></div>
+        <div class="login">登录</div>
+      </div>
+      <style>
+      .nav {
+        display: flex;
+        align-items: center;   /* 垂直居中 */
+        padding: 10px;
+        background: #f0f0f0;
+      }
+      .menu { margin: 0 15px; }
+      .space { flex: 1; }      /* 占满剩余空间，将登录按钮推到右侧 */
+    </style>
+</body>
+
+</html>
