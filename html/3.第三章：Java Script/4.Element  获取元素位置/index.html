@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 5px solid  red;
+            padding: 10px;
+            margin: 10px;
+            background-color: yellow;
+        }
+        h3{
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box" id="boxtext"></div>
+    <h3>biaoti1</h3>
+    <h3>biaoti2</h3>
+    <h3>biaoti3</h3>
+    <h3>biaoti4</h3>
+    
+    <script>
+        var box=document.getElementById('boxtext');
+        console.log(box.clientHeight);
+        console.log(box.clientWidth);
+
+        // 浏览器视口(屏幕高度)
+        console.log(document.documentElement.clientHeight);
+        //网页高度
+        console.log(document.body.clientHeight);
+
+        console.log("-------------------");
+        console.log(box.scrollHeight);
+        console.log(box.scrollWidth);
+
+        // 浏览器视口(屏幕高度)
+        console.log(document.documentElement.scrollHeight);
+        //网页高度
+        console.log(document.body.scrollHeight);
+
+        console.log("-------------------");
+        //获取滚动条高度
+        console.log(document.documentElement.scrollTop);
+    </script>
+</body>
+</html>
