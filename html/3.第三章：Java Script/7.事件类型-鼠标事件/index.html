@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 100px;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 100px;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="bit1">按钮</button>
+    <button id="bit2">按钮</button>
+    <button id="bit3">按钮</button>
+    <button id="bit4">按钮</button>
+    <div class="box1" id="bit5"></div>
+    <div class="box2" id="bit6"></div>
+    <div class="box3" id="bit7"></div>
+
+    <script>
+        var bit1 = document.getElementById("bit1");
+        var bit2 = document.getElementById("bit2");
+        var bit3 = document.getElementById("bit3");
+        var bit4 = document.getElementById("bit4");
+        var bit5 = document.getElementById("bit5");
+        var bit6 = document.getElementById("bit6");
+        var bit7 = document.getElementById("bit7");
+        bit1.onclick = function(){
+            console.log("单击事件");
+        }
+
+        bit2.ondblclick = function(){
+            console.log("双击事件");
+        }
+
+        bit3.onmousedown = function(){
+            console.log("鼠标按下事件");
+        }
+
+        bit4.onmouseup = function(){
+            console.log("鼠标抬起事件");
+        }   
+
+        bit5.onmousemove = function(){
+            console.log("鼠标移动事件");
+        }
+
+        bit6.onmouseover = function(){
+            console.log("鼠标移入事件");
+        }
+
+        bit7.onmouseout = function(){
+            console.log("鼠标移出事件");
+        }
+    </script>
+    
+</body>
+</html>

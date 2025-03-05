@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="bit">按钮</button>
+
+    <script>
+
+        //DOM0级优点：HTML代码和JS代码分离开，没有耦合在一起
+        //DOM0级缺点：无法同时绑定多个事件
+
+        var bit = document.getElementById("bit");
+
+        //被覆盖
+        bit.onclick = function(){
+            console.log("点击了按钮");
+        }
+
+        bit.onclick = function(){
+            console.log("点击了按钮2");
+        }
+    </script>
+    
+</body>
+</html>

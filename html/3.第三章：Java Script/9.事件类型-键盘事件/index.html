@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="username">
+    <input type="text" id="password">
+
+    <script>
+        var username = document.getElementById("username");
+        var password = document.getElementById("password");
+
+        username.addEventListener("keydown", function (event) {
+            console.log("按下了");
+        });
+
+        username.addEventListener("keyup", function (event) {
+            console.log(event.target.value);
+        });
+
+        //keypress事件不会监听到shift、ctrl、alt Meta等键
+        username.addEventListener("keypress", function (event) {
+            console.log(event.key);
+        });
+
+        password.onkeyup = function (e) {
+            //KeyCode属性：键盘上键的ASCII码值
+            console.log(e.keyCode);
+            if (e.keyCode === 13) {
+                alert("开始搜索");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
