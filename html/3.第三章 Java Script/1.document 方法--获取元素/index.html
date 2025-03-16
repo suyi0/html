@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .nav{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="text">hello1</div>
+    <div class="text">hello2</div>
+
+    <form name="login"></form>
+
+    <p id="root">呵呵呵</p>
+
+    <div class="nav">nav1</div>
+    <div class="nav">nav2</div>
+
+    <script>
+        // 1. 获取元素
+        var divs = document.getElementsByTagName('div');
+        var div = document.getElementsByTagName('div')[0];
+
+        div.innerHTML = "Hello World";
+
+        var divts=document.getElementsByClassName('text');
+        var divt=document.getElementsByClassName('text')[0];
+
+        var form = document.getElementsByName('login')[0];
+
+        var p = document.getElementById('root');
+
+        var nav=document.querySelector('.nav');
+        var navs=document.querySelectorAll('.nav')[1];
+        // 2. 绑定事件
+        // div.onclick = function () {
+        //     alert('click');
+        // }
+
+        console.log(divs);
+        console.log(div);
+        console.log(divt); 
+        console.log(divts);
+        console.log(form);
+        console.log(p);
+        console.log(nav);
+        console.log(navs);
+
+    </script>
+
+</body>
+
+</html>

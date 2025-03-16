@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let allstr="hello world";
+        let str = "llo";
+        let str1="he";
+        let str2 =" world";
+        
+        console.log(allstr.includes(str));//true
+        
+        console.log(allstr.startsWith(str));//false
+        console.log(allstr.startsWith(str1));//true
+        
+        console.log(allstr.endsWith(str));//false
+
+        //第二个参数表示从第几个字符开始查找
+        //从1开始计数
+        console.log(allstr.startsWith(str2,5))//true
+        console.log(allstr.endsWith(str,5))//true
+        console.log(allstr.includes(str,2))//true
+
+        let x="x";
+        // repeat() 方法构造并返回一个新字符串，
+        // 该字符串包含被连接在一起的指定数量的字符串的副本。
+        console.log(x.repeat(3));//xxx
+
+        // padStrat()方法用另一个字符串填充当前字符串，
+        // 在当前字符串的开头以便产生的字符串达到给定的长度。
+        //padEnd()方法用另一个字符串填充当前字符串，
+        // 在当前字符串的末尾以便产生的字符串达到给定的长度。
+        console.log(x.padStart(3,"ab"));//abx
+        console.log(x.padEnd(3,"ab"));//xab
+
+        //trim()方法移除字符串的头尾空白符。
+        //trimStart()方法移除字符串的头空白符。
+        //trimEnd()方法移除字符串的尾空白符。
+        let it ="   itbaizhan   ";
+        console.log(it.trim());//itbaizhan
+        console.log(it.trimStart());//itbaizhan(   )
+        console.log(it.trimEnd());//   itbaizhan
+
+        //at()方法返回指定索引位置的字符支持负索引
+        //charAt()方法返回指定索引位置的字符不支持负索引
+        //从0开始计数，负数从-1开始计数
+        let myIt="itbaizhan";
+        console.log(myIt.at(3));//a
+        console.log(myIt.charAt(3));//a
+        console.log(myIt.at(20));//undefined
+        console.log(myIt.at(-3));//h
+
+    </script>
+    
+</body>
+</html>
